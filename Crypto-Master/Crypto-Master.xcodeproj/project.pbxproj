@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		D91B605426FB199F00193FE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B605326FB199F00193FE4 /* AppDelegate.swift */; };
 		D91B605626FB199F00193FE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B605526FB199F00193FE4 /* SceneDelegate.swift */; };
 		D91B605826FB199F00193FE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B605726FB199F00193FE4 /* ViewController.swift */; };
@@ -67,6 +68,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D91B606E26FB19A000193FE4 /* Frameworks */ = {
+=======
+		A2D3306926FB14D000E2CDA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D3306826FB14D000E2CDA3 /* AppDelegate.swift */; };
+		A2D3306B26FB14D000E2CDA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D3306A26FB14D000E2CDA3 /* SceneDelegate.swift */; };
+		A2D3306D26FB14D000E2CDA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D3306C26FB14D000E2CDA3 /* ViewController.swift */; };
+		A2D3307026FB14D000E2CDA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2D3306E26FB14D000E2CDA3 /* Main.storyboard */; };
+		A2D3307226FB14D200E2CDA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2D3307126FB14D200E2CDA3 /* Assets.xcassets */; };
+		A2D3307526FB14D200E2CDA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2D3307326FB14D200E2CDA3 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A2D3306526FB14D000E2CDA3 /* Crypto-Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto-Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D3306826FB14D000E2CDA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2D3306A26FB14D000E2CDA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A2D3306C26FB14D000E2CDA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A2D3306F26FB14D000E2CDA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A2D3307126FB14D200E2CDA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2D3307426FB14D200E2CDA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A2D3307626FB14D200E2CDA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2D3306226FB14D000E2CDA3 /* Frameworks */ = {
+>>>>>>> 55039d67c85ff4af4d778da507a33607db102d01
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,6 +100,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 		D91B604726FB199F00193FE4 = {
 			isa = PBXGroup;
 			children = (
@@ -92,10 +117,25 @@
 				D91B605026FB199F00193FE4 /* Crypto-Master.app */,
 				D91B606626FB19A000193FE4 /* Crypto-MasterTests.xctest */,
 				D91B607126FB19A000193FE4 /* Crypto-MasterUITests.xctest */,
+=======
+		A2D3305C26FB14D000E2CDA3 = {
+			isa = PBXGroup;
+			children = (
+				A2D3306726FB14D000E2CDA3 /* Crypto-Master */,
+				A2D3306626FB14D000E2CDA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A2D3306626FB14D000E2CDA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2D3306526FB14D000E2CDA3 /* Crypto-Master.app */,
+>>>>>>> 55039d67c85ff4af4d778da507a33607db102d01
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		D91B605226FB199F00193FE4 /* Crypto-Master */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,10 +146,23 @@
 				D91B605C26FB19A000193FE4 /* Assets.xcassets */,
 				D91B605E26FB19A000193FE4 /* LaunchScreen.storyboard */,
 				D91B606126FB19A000193FE4 /* Info.plist */,
+=======
+		A2D3306726FB14D000E2CDA3 /* Crypto-Master */ = {
+			isa = PBXGroup;
+			children = (
+				A2D3306826FB14D000E2CDA3 /* AppDelegate.swift */,
+				A2D3306A26FB14D000E2CDA3 /* SceneDelegate.swift */,
+				A2D3306C26FB14D000E2CDA3 /* ViewController.swift */,
+				A2D3306E26FB14D000E2CDA3 /* Main.storyboard */,
+				A2D3307126FB14D200E2CDA3 /* Assets.xcassets */,
+				A2D3307326FB14D200E2CDA3 /* LaunchScreen.storyboard */,
+				A2D3307626FB14D200E2CDA3 /* Info.plist */,
+>>>>>>> 55039d67c85ff4af4d778da507a33607db102d01
 			);
 			path = "Crypto-Master";
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		D91B606926FB19A000193FE4 /* Crypto-MasterTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +191,18 @@
 				D91B604C26FB199F00193FE4 /* Sources */,
 				D91B604D26FB199F00193FE4 /* Frameworks */,
 				D91B604E26FB199F00193FE4 /* Resources */,
+=======
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2D3306426FB14D000E2CDA3 /* Crypto-Master */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2D3307926FB14D200E2CDA3 /* Build configuration list for PBXNativeTarget "Crypto-Master" */;
+			buildPhases = (
+				A2D3306126FB14D000E2CDA3 /* Sources */,
+				A2D3306226FB14D000E2CDA3 /* Frameworks */,
+				A2D3306326FB14D000E2CDA3 /* Resources */,
+>>>>>>> 55039d67c85ff4af4d778da507a33607db102d01
 			);
 			buildRules = (
 			);
@@ -145,6 +210,7 @@
 			);
 			name = "Crypto-Master";
 			productName = "Crypto-Master";
+<<<<<<< HEAD
 			productReference = D91B605026FB199F00193FE4 /* Crypto-Master.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -188,11 +254,21 @@
 
 /* Begin PBXProject section */
 		D91B604826FB199F00193FE4 /* Project object */ = {
+=======
+			productReference = A2D3306526FB14D000E2CDA3 /* Crypto-Master.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2D3305D26FB14D000E2CDA3 /* Project object */ = {
+>>>>>>> 55039d67c85ff4af4d778da507a33607db102d01
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+<<<<<<< HEAD
 					D91B604F26FB199F00193FE4 = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -207,6 +283,14 @@
 				};
 			};
 			buildConfigurationList = D91B604B26FB199F00193FE4 /* Build configuration list for PBXProject "Crypto-Master" */;
+=======
+					A2D3306426FB14D000E2CDA3 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = A2D3306026FB14D000E2CDA3 /* Build configuration list for PBXProject "Crypto-Master" */;
+>>>>>>> 55039d67c85ff4af4d778da507a33607db102d01
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -214,6 +298,7 @@
 				en,
 				Base,
 			);
+<<<<<<< HEAD
 			mainGroup = D91B604726FB199F00193FE4;
 			productRefGroup = D91B605126FB199F00193FE4 /* Products */;
 			projectDirPath = "";
@@ -222,11 +307,20 @@
 				D91B604F26FB199F00193FE4 /* Crypto-Master */,
 				D91B606526FB19A000193FE4 /* Crypto-MasterTests */,
 				D91B607026FB19A000193FE4 /* Crypto-MasterUITests */,
+=======
+			mainGroup = A2D3305C26FB14D000E2CDA3;
+			productRefGroup = A2D3306626FB14D000E2CDA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2D3306426FB14D000E2CDA3 /* Crypto-Master */,
+>>>>>>> 55039d67c85ff4af4d778da507a33607db102d01
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+<<<<<<< HEAD
 		D91B604E26FB199F00193FE4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,12 +342,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+=======
+		A2D3306326FB14D000E2CDA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2D3307526FB14D200E2CDA3 /* LaunchScreen.storyboard in Resources */,
+				A2D3307226FB14D200E2CDA3 /* Assets.xcassets in Resources */,
+				A2D3307026FB14D000E2CDA3 /* Main.storyboard in Resources */,
+>>>>>>> 55039d67c85ff4af4d778da507a33607db102d01
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+<<<<<<< HEAD
 		D91B604C26FB199F00193FE4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -277,11 +381,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				D91B607626FB19A100193FE4 /* Crypto_MasterUITests.swift in Sources */,
+=======
+		A2D3306126FB14D000E2CDA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2D3306D26FB14D000E2CDA3 /* ViewController.swift in Sources */,
+				A2D3306926FB14D000E2CDA3 /* AppDelegate.swift in Sources */,
+				A2D3306B26FB14D000E2CDA3 /* SceneDelegate.swift in Sources */,
+>>>>>>> 55039d67c85ff4af4d778da507a33607db102d01
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+<<<<<<< HEAD
 /* Begin PBXTargetDependency section */
 		D91B606826FB19A000193FE4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -300,14 +414,28 @@
 			isa = PBXVariantGroup;
 			children = (
 				D91B605A26FB199F00193FE4 /* Base */,
+=======
+/* Begin PBXVariantGroup section */
+		A2D3306E26FB14D000E2CDA3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2D3306F26FB14D000E2CDA3 /* Base */,
+>>>>>>> 55039d67c85ff4af4d778da507a33607db102d01
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		D91B605E26FB19A000193FE4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D91B605F26FB19A000193FE4 /* Base */,
+=======
+		A2D3307326FB14D200E2CDA3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2D3307426FB14D200E2CDA3 /* Base */,
+>>>>>>> 55039d67c85ff4af4d778da507a33607db102d01
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -315,7 +443,11 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+<<<<<<< HEAD
 		D91B607826FB19A100193FE4 /* Debug */ = {
+=======
+		A2D3307726FB14D200E2CDA3 /* Debug */ = {
+>>>>>>> 55039d67c85ff4af4d778da507a33607db102d01
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -376,7 +508,11 @@
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		D91B607926FB19A100193FE4 /* Release */ = {
+=======
+		A2D3307826FB14D200E2CDA3 /* Release */ = {
+>>>>>>> 55039d67c85ff4af4d778da507a33607db102d01
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -431,7 +567,11 @@
 			};
 			name = Release;
 		};
+<<<<<<< HEAD
 		D91B607B26FB19A100193FE4 /* Debug */ = {
+=======
+		A2D3307A26FB14D200E2CDA3 /* Debug */ = {
+>>>>>>> 55039d67c85ff4af4d778da507a33607db102d01
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -442,14 +582,22 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+<<<<<<< HEAD
 				PRODUCT_BUNDLE_IDENTIFIER = "Stu-mer.Crypto-Master";
+=======
+				PRODUCT_BUNDLE_IDENTIFIER = "fabian.Crypto-Master";
+>>>>>>> 55039d67c85ff4af4d778da507a33607db102d01
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		D91B607C26FB19A100193FE4 /* Release */ = {
+=======
+		A2D3307B26FB14D200E2CDA3 /* Release */ = {
+>>>>>>> 55039d67c85ff4af4d778da507a33607db102d01
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -460,13 +608,18 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+<<<<<<< HEAD
 				PRODUCT_BUNDLE_IDENTIFIER = "Stu-mer.Crypto-Master";
+=======
+				PRODUCT_BUNDLE_IDENTIFIER = "fabian.Crypto-Master";
+>>>>>>> 55039d67c85ff4af4d778da507a33607db102d01
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
+<<<<<<< HEAD
 		D91B607E26FB19A100193FE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -573,20 +726,42 @@
 			buildConfigurations = (
 				D91B607E26FB19A100193FE4 /* Debug */,
 				D91B607F26FB19A100193FE4 /* Release */,
+=======
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2D3306026FB14D000E2CDA3 /* Build configuration list for PBXProject "Crypto-Master" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2D3307726FB14D200E2CDA3 /* Debug */,
+				A2D3307826FB14D200E2CDA3 /* Release */,
+>>>>>>> 55039d67c85ff4af4d778da507a33607db102d01
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+<<<<<<< HEAD
 		D91B608026FB19A100193FE4 /* Build configuration list for PBXNativeTarget "Crypto-MasterUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D91B608126FB19A100193FE4 /* Debug */,
 				D91B608226FB19A100193FE4 /* Release */,
+=======
+		A2D3307926FB14D200E2CDA3 /* Build configuration list for PBXNativeTarget "Crypto-Master" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2D3307A26FB14D200E2CDA3 /* Debug */,
+				A2D3307B26FB14D200E2CDA3 /* Release */,
+>>>>>>> 55039d67c85ff4af4d778da507a33607db102d01
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
+<<<<<<< HEAD
 	rootObject = D91B604826FB199F00193FE4 /* Project object */;
+=======
+	rootObject = A2D3305D26FB14D000E2CDA3 /* Project object */;
+>>>>>>> 55039d67c85ff4af4d778da507a33607db102d01
 }
