@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     @IBAction func button(_ sender: UIButton) {
         let vigenere2 = Vigenere( key: key.text!)
         let ceasar2 = cesar()
-        let aes2 = aes()
+       // let aes2 = aes()
         
         let choice = textfield.text!
         let e = segmented.isEnabledForSegment(at: 0)
@@ -55,8 +55,10 @@ class ViewController: UIViewController {
            // case "AES":
                
                // break
+          
             default:
-                <#code#>
+                ausgabe.text = ""
+                
             }
         }
         if d {
@@ -71,8 +73,9 @@ class ViewController: UIViewController {
            // case "AES":
             
             case "": break
+            
             default:
-                <#code#>
+                ausgabe.text = ""
             }
         }
         

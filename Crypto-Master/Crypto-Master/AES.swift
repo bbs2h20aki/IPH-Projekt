@@ -5,12 +5,12 @@
 //  Created by Fabian Kirchmann / BBS2H20A on 23.09.21.
 //
 
-
+/*
 import UIKit
 import Foundation
 import CommonCrypto
 
-class aes {
+
 
 
 func crypt(operation: Int, algorithm: Int, options: Int, key: Data,
@@ -68,7 +68,7 @@ extension Data {
         
         return iv + ciphertext
     }
-}
+
 
 let key = randomGenerateBytes(count: 256/8)!
 let superDuperSecret = "The quick brown fox jumps over the lazy dog".data(using: .utf8)!
@@ -76,3 +76,5 @@ let encrypted = superDuperSecret.encryptAES256_CBC_PKCS7_IV(key: key)!
 let decrypted = encrypted.decryptAES256_CBC_PKCS7_IV(key: key)!
 
 
+
+*/
