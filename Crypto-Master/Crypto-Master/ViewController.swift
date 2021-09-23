@@ -25,7 +25,8 @@ class ViewController: UIViewController {
     
     var e = true
     @IBOutlet weak var ausgabe: UILabel!
-    @IBOutlet weak var eingabe: UITextView!
+    @IBOutlet weak var eingabe: UITextField!
+    
     @IBAction func segmented(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
              e = true
@@ -35,8 +36,9 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBOutlet weak var textfield: UITextField!
+
     @IBOutlet weak var key: UITextField!
+    @IBOutlet weak var textfield: UITextField!
     
    
     
