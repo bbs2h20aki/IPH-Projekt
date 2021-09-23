@@ -39,6 +39,9 @@
                                     <segment title="Crypt"/>
                                     <segment title="Decrypt"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmented:" destination="BYZ-38-t0r" eventType="valueChanged" id="eJO-Gb-fMD"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crypto-Master" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KtM-mc-CY3">
                                 <rect key="frame" x="107" y="60" width="200" height="30"/>
@@ -97,7 +100,7 @@
                                     <constraint firstAttribute="width" constant="410" id="dcA-Ca-9nx"/>
                                 </constraints>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtO-kx-1A6">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtO-kx-1A6" customClass="RoundedButton">
                                 <rect key="frame" x="137" y="778" width="140" height="60"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
                                 <constraints>
@@ -152,7 +155,6 @@
                         <outlet property="ausgabe" destination="mzA-d2-UT6" id="8S9-NO-Pnz"/>
                         <outlet property="eingabe" destination="nEK-vz-Azw" id="OKP-lV-YBL"/>
                         <outlet property="key" destination="xtH-G7-KFi" id="8gQ-FB-QDs"/>
-                        <outlet property="segmented" destination="5EG-JV-QJQ" id="gvb-iM-u4o"/>
                         <outlet property="textfield" destination="aol-F5-yC1" id="klW-9I-QMg"/>
                     </connections>
                 </viewController>

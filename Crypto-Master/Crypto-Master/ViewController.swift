@@ -23,10 +23,18 @@ class ViewController: UIViewController {
     }
 
     
- 
+    var e = true
     @IBOutlet weak var ausgabe: UILabel!
     @IBOutlet weak var eingabe: UITextView!
-    @IBOutlet weak var segmented: UISegmentedControl!
+    @IBAction func segmented(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+             e = true
+        }
+        if sender.selectedSegmentIndex == 1 {
+            e = false
+        }
+    }
+    
     @IBOutlet weak var textfield: UITextField!
     @IBOutlet weak var key: UITextField!
     
@@ -38,8 +46,6 @@ class ViewController: UIViewController {
        // let aes2 = aes()
         
         let choice = textfield.text!
-        let e = segmented.isEnabledForSegment(at: 0)
-        let d = segmented.isEnabledForSegment(at: 1)
         let message = eingabe.text!
         
         let s = Int(key.text!)!
@@ -61,7 +67,7 @@ class ViewController: UIViewController {
                 
             }
         }
-        if d {
+        if  e == false {
             switch choice {
             case "Ceasar":
                 ausgabe.text = ceasar2.decrypt(message: message , shift: s)
