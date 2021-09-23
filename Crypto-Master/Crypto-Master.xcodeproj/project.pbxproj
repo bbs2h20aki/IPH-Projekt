@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2A1C4E026FC595B00272B1D /* Vigenere.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A1C4DF26FC595B00272B1D /* Vigenere.swift */; };
 		A2D3308926FB208700E2CDA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D3308826FB208700E2CDA3 /* AppDelegate.swift */; };
 		A2D3308B26FB208700E2CDA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D3308A26FB208700E2CDA3 /* SceneDelegate.swift */; };
 		A2D3308D26FB208700E2CDA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D3308C26FB208700E2CDA3 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A2A1C4DF26FC595B00272B1D /* Vigenere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vigenere.swift; sourceTree = "<group>"; };
 		A2D3308526FB208700E2CDA3 /* Crypto-Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto-Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2D3308826FB208700E2CDA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2D3308A26FB208700E2CDA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				A2D3309326FB208800E2CDA3 /* LaunchScreen.storyboard */,
 				A2D3309626FB208800E2CDA3 /* Info.plist */,
 				D963471426FC5761004F9245 /* ceasar.swift */,
+				A2A1C4DF26FC595B00272B1D /* Vigenere.swift */,
 			);
 			path = "Crypto-Master";
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				A2D3308D26FB208700E2CDA3 /* ViewController.swift in Sources */,
 				A2D3308926FB208700E2CDA3 /* AppDelegate.swift in Sources */,
 				D963471526FC5761004F9245 /* ceasar.swift in Sources */,
+				A2A1C4E026FC595B00272B1D /* Vigenere.swift in Sources */,
 				A2D3308B26FB208700E2CDA3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
