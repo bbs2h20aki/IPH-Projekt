@@ -10,6 +10,8 @@ import UIKit
 import Foundation
 import CommonCrypto
 
+class aes {
+
 
 func crypt(operation: Int, algorithm: Int, options: Int, key: Data,
         initializationVector: Data, dataIn: Data) -> Data? {
@@ -42,6 +44,18 @@ func randomGenerateBytes(count: Int) -> Data? {
     return Data(bytes: bytes, count: count)
 }
 
+    
+    func decryptAES256_CBC_PKCS7_IV(key: Data) -> Data? {
+        guard count > kCCBlockSizeAES128 else { return nil }
+        let iv = prefix(kCCBlockSizeAES128)
+        let ciphertext = suffix(from: kCCBlockSizeAES128)
+        return crypt(operation: kCCDecrypt, algorithm: kCCAlgorithmAES,
+            options: kCCOptionPKCS7Padding, key: key, initializationVector: iv,
+            dataIn: ciphertext)
+    }
+}
+
+
 extension Data {
     func encryptAES256_CBC_PKCS7_IV(key: Data) -> Data? {
         guard let iv = randomGenerateBytes(count: kCCBlockSizeAES128) else { return nil }
@@ -53,15 +67,6 @@ extension Data {
                                     dataIn: self) else { return nil }
         
         return iv + ciphertext
-    }
-    
-    func decryptAES256_CBC_PKCS7_IV(key: Data) -> Data? {
-        guard count > kCCBlockSizeAES128 else { return nil }
-        let iv = prefix(kCCBlockSizeAES128)
-        let ciphertext = suffix(from: kCCBlockSizeAES128)
-        return crypt(operation: kCCDecrypt, algorithm: kCCAlgorithmAES,
-            options: kCCOptionPKCS7Padding, key: key, initializationVector: iv,
-            dataIn: ciphertext)
     }
 }
 
