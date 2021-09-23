@@ -29,26 +29,17 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtO-kx-1A6">
-                                <rect key="frame" x="137" y="778" width="140" height="60"/>
-                                <color key="backgroundColor" systemColor="linkColor"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5EG-JV-QJQ">
+                                <rect key="frame" x="132" y="120" width="150" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="Jye-pT-ySU"/>
-                                    <constraint firstAttribute="height" constant="60" id="sOf-Nt-SAj"/>
+                                    <constraint firstAttribute="width" constant="150" id="H9f-Yh-tbH"/>
+                                    <constraint firstAttribute="height" constant="30" id="dr3-Wf-RrW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="CRYPTO">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WYm-yg-HmE"/>
-                                </connections>
-                            </button>
+                                <segments>
+                                    <segment title="Crypt"/>
+                                    <segment title="Decrypt"/>
+                                </segments>
+                            </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crypto-Master" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KtM-mc-CY3">
                                 <rect key="frame" x="107" y="60" width="200" height="30"/>
                                 <constraints>
@@ -81,13 +72,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <pickerView tag="3" contentMode="scaleToFill" semanticContentAttribute="playback" translatesAutoresizingMaskIntoConstraints="NO" id="O1X-fV-Zrg">
-                                <rect key="frame" x="2" y="729" width="410" height="160"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="DoF-4A-fXj"/>
-                                    <constraint firstAttribute="width" constant="410" id="dcA-Ca-9nx"/>
-                                </constraints>
-                            </pickerView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zahl zum verschieben" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xtH-G7-KFi">
                                 <rect key="frame" x="19.5" y="359" width="375" height="34"/>
                                 <constraints>
@@ -106,17 +90,33 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5EG-JV-QJQ">
-                                <rect key="frame" x="132" y="120" width="150" height="31"/>
+                            <pickerView tag="3" contentMode="scaleToFill" semanticContentAttribute="playback" translatesAutoresizingMaskIntoConstraints="NO" id="O1X-fV-Zrg">
+                                <rect key="frame" x="2" y="729" width="410" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="H9f-Yh-tbH"/>
-                                    <constraint firstAttribute="height" constant="30" id="dr3-Wf-RrW"/>
+                                    <constraint firstAttribute="height" constant="160" id="DoF-4A-fXj"/>
+                                    <constraint firstAttribute="width" constant="410" id="dcA-Ca-9nx"/>
                                 </constraints>
-                                <segments>
-                                    <segment title="Crypt"/>
-                                    <segment title="Decrypt"/>
-                                </segments>
-                            </segmentedControl>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtO-kx-1A6">
+                                <rect key="frame" x="137" y="778" width="140" height="60"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="Jye-pT-ySU"/>
+                                    <constraint firstAttribute="height" constant="60" id="sOf-Nt-SAj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="CRYPTO">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WYm-yg-HmE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
