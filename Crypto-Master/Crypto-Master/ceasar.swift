@@ -9,6 +9,8 @@ import Foundation
 
 import UIKit
 
+class cesar{
+
 func encrypt(message: String, shift: Int) -> String {
 
     func shiftLetter(ucs: UnicodeScalar) -> UnicodeScalar {
@@ -55,7 +57,7 @@ func decrypt(message: String, shift: Int) -> String {
     return String(String.UnicodeScalarView(msg.unicodeScalars.map(deshiftLetter)))
 }
 
-
+}
 
 
 
