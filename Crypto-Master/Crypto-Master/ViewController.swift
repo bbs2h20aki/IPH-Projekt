@@ -110,6 +110,7 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource{
         textfield.resignFirstResponder()
         if textfield.text == "Ceasar"{
         erklaerung.text = "Bei der Verschlüsselung wird jeder Buchstabe des Klartexts in Geheimtextbuchstaben abgebildet. Diese Abbildung ergibt sich, indem man die Zeichen eines geordneten Alphabets um eine bestimmte Anzahl zyklisch nach rechts verschiebt; zyklisch bedeutet, dass man beim Verschieben über Z hinaus wieder bei A anfangend weiterzählt."
+            key.placeholder = "Zahl zum veschieben eingeben!"
         }
         if textfield.text == "Vigenere"{
         erklaerung.text = "Der Klartext wird in Einzelzeichen zerlegt und diese durch Geheimtextzeichen ersetzt, die mithilfe eines Kennworts aus mehreren unterschiedlichen Alphabeten des Vigenere-Quadrats ausgewählt werden. Dabei handelt es sich um eine quadratische Anordnung von untereinander stehenden verschobenen Alphabeten."
