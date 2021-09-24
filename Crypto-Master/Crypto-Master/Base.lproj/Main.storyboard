@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="height" constant="30" id="dr3-Wf-RrW"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="Crypt"/>
+                                    <segment title="Encrypt"/>
                                     <segment title="Decrypt"/>
                                 </segments>
                                 <connections>

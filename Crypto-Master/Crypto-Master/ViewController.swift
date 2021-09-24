@@ -45,15 +45,15 @@ class ViewController: UIViewController {
     @IBAction func button(_ sender: UIButton) {
         let vigenere2 = Vigenere( key: key.text!)
         let ceasar2 = cesar()
-       // let aes2 = aes()
         
         let choice = textfield.text!
         let message = eingabe.text!
         
-        let s = Int(key.text!)!
+       
         if e {
             switch choice {
             case "Ceasar":
+                let s = Int(key.text!)!
                 ausgabe.text = ceasar2.encrypt(message: message , shift: s)
                 break
             case "Vigenere":
@@ -72,6 +72,7 @@ class ViewController: UIViewController {
         if  e == false {
             switch choice {
             case "Ceasar":
+                let s = Int(key.text!)!
                 ausgabe.text = ceasar2.decrypt(message: message , shift: s)
                 break
             case "Vigenere":
