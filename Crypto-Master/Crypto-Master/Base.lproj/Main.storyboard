@@ -19,13 +19,13 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="376035-encryption-wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="Kck-9d-C9T">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Erklärung" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zj1-hX-GK1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Erklärung" lineBreakMode="tailTruncation" numberOfLines="44" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zj1-hX-GK1">
                                 <rect key="frame" x="19.5" y="234" width="375" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="Pdm-zm-7na"/>
                                     <constraint firstAttribute="height" constant="100" id="RSL-Ox-c8m"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -53,13 +53,13 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ergebnis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzA-d2-UT6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ergebnis" lineBreakMode="tailTruncation" numberOfLines="33" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzA-d2-UT6">
                                 <rect key="frame" x="19.5" y="588" width="375" height="145"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="145" id="Eru-zy-dPc"/>
                                     <constraint firstAttribute="width" constant="375" id="wa0-to-L7P"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -150,6 +150,7 @@
                     <connections>
                         <outlet property="ausgabe" destination="mzA-d2-UT6" id="8S9-NO-Pnz"/>
                         <outlet property="eingabe" destination="FGS-V7-MYA" id="yYd-fz-6o3"/>
+                        <outlet property="erklaerung" destination="zj1-hX-GK1" id="Lc8-eF-0IP"/>
                         <outlet property="key" destination="xtH-G7-KFi" id="8gQ-FB-QDs"/>
                         <outlet property="textfield" destination="aol-F5-yC1" id="Csi-Bx-7yq"/>
                     </connections>

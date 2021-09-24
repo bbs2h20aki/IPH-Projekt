@@ -34,6 +34,7 @@ class ViewController: UIViewController {
     var e = true
     @IBOutlet weak var ausgabe: UILabel!
     @IBOutlet weak var eingabe: UITextField!
+    @IBOutlet weak var erklaerung: UILabel!
     
     @IBAction func segmented(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
@@ -118,6 +119,17 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource{
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         textfield.text = countries[row]
         textfield.resignFirstResponder()
+        if textfield.text == "Ceasar"{
+        erklaerung.text = "Bei der Verschlüsselung wird jeder Buchstabe des Klartexts in Geheimtextbuchstaben abgebildet. Diese Abbildung ergibt sich, indem man die Zeichen eines geordneten Alphabets um eine bestimmte Anzahl zyklisch nach rechts verschiebt; zyklisch bedeutet, dass man beim Verschieben über Z hinaus wieder bei A anfangend weiterzählt."
+            key.placeholder = "Zahl zum veschieben eingeben!"
+        }
+        if textfield.text == "Vigenere"{
+        erklaerung.text = "Der Klartext wird in Einzelzeichen zerlegt und diese durch Geheimtextzeichen ersetzt, die mithilfe eines Kennworts aus mehreren unterschiedlichen Alphabeten des Vigenere-Quadrats ausgewählt werden. Dabei handelt es sich um eine quadratische Anordnung von untereinander stehenden verschobenen Alphabeten."
+            key.placeholder = "Wort zum Verschlüsseln eingeben!"
+        }
+        if textfield.text == "AES"{
+            erklaerung.text = "Bei der AES Verschlüsselung wird ein- und derselbe Schlüssel zum Ver- und Entschlüsseln verwendet. Das AES Verschlüsselungsverfahren ist von der AES Encryption Variante abhängig. Zunächst schreibt man jeden Block in eine Tabelle mit vier Zeilen. Die Anzahl der Spalten hängt dabei von der gewählten AES Variante ab und reicht von 4 (128 Bit) bis 8 (256 Bit). Beim AES Verfahren wird ein Block nicht nur einmal verschlüsselt. Verschiedene Teile des Schlüssels werden nacheinander angewendet. Die Anzahl dieser Runden   ist dabei von der Schlüssellänge und der Blockgröße abhängig."
+        }
     }
     
     
