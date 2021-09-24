@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     var e = true
     @IBOutlet weak var ausgabe: UILabel!
     @IBOutlet weak var eingabe: UITextField!
+    @IBOutlet weak var erklaerung: UILabel!
     
     @IBAction func segmented(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
@@ -53,10 +54,12 @@ class ViewController: UIViewController {
         if e {
             switch choice {
             case "Ceasar":
+                erklaerung.text = "Bei der Verschlüsselung wird jeder Buchstabe des Klartexts in Geheimtextbuchstaben abgebildet. Diese Abbildung ergibt sich, indem man die Zeichen eines geordneten Alphabets um eine bestimmte Anzahl zyklisch nach rechts verschiebt; zyklisch bedeutet, dass man beim Verschieben über Z hinaus wieder bei A anfangend weiterzählt."
                 let s = Int(key.text!)!
                 ausgabe.text = ceasar2.encrypt(message: message , shift: s)
                 break
             case "Vigenere":
+                erklaerung.text = "Der Klartext wird in Einzelzeichen zerlegt und diese durch Geheimtextzeichen ersetzt, die mithilfe eines Kennworts aus mehreren unterschiedlichen Alphabeten des Vigenere-Quadrats ausgewählt werden. Dabei handelt es sich um eine quadratische Anordnung von untereinander stehenden verschobenen Alphabeten."
                 ausgabe.text = vigenere2.encrypt(plainText: message)
                 break
                 
