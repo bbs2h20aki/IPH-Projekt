@@ -114,6 +114,9 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource{
         if textfield.text == "Vigenere"{
         erklaerung.text = "Der Klartext wird in Einzelzeichen zerlegt und diese durch Geheimtextzeichen ersetzt, die mithilfe eines Kennworts aus mehreren unterschiedlichen Alphabeten des Vigenere-Quadrats ausgewählt werden. Dabei handelt es sich um eine quadratische Anordnung von untereinander stehenden verschobenen Alphabeten."
         }
+        if textfield.text == "AES"{
+            erklaerung.text = "Bei der AES Verschlüsselung wird ein- und derselbe Schlüssel zum Ver- und Entschlüsseln verwendet. Das AES Verschlüsselungsverfahren ist von der AES Encryption Variante abhängig. Zunächst schreibt man jeden Block in eine Tabelle mit vier Zeilen. Die Anzahl der Spalten hängt dabei von der gewählten AES Variante ab und reicht von 4 (128 Bit) bis 8 (256 Bit). Beim AES Verfahren wird ein Block nicht nur einmal verschlüsselt. Verschiedene Teile des Schlüssels werden nacheinander angewendet. Die Anzahl dieser Runden   ist dabei von der Schlüssellänge und der Blockgröße abhängig."
+        }
     }
 }
 
