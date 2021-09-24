@@ -251,13 +251,13 @@ extension Data {
 }
 
 let aes = AES()
-let key = aes.randomGenerateBytes(count: 256/8)!
+let key2 = aes.randomGenerateBytes(count: 256/8)!
 let vc = ViewController()
 
-let ein = vc.eingabe.text
+var ein = vc.eingabe.text
 let superDuperSecret =  ein?.data(using: .utf8)!
 
-let encrypted = superDuperSecret?.encryptAES256_CBC_PKCS7_IV(key: key)!
+let encrypted = superDuperSecret?.encryptAES256_CBC_PKCS7_IV(key: key2)!
 
-let decrypted = encrypted?.decryptAES256_CBC_PKCS7_IV(key: key)!
+let decrypted = encrypted?.decryptAES256_CBC_PKCS7_IV(key: key2)!
 
